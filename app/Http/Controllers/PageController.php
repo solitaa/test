@@ -12,13 +12,13 @@ class PageController extends Controller
     public function about(){
         return view("about");
     }
-    public function services(){
+    public function contact(){
         //$services = ['a','b','c'];
         $data = array(
             'title' => 'ucello',
-            'services' => ['a', 'b', 'c']
+            'letters' => ['a', 'b', 'c']
         );
 
-        return view('services')->with($data);
+        return view('contact')->with($data);
     }
 }
